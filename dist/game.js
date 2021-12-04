@@ -2812,10 +2812,19 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       origin("center")
     ]);
     add([
-      text("Game Over :("),
-      po(WIDTH / 2, HEIGHT / 2 + 100),
+      text("Game Over"),
+      pos(WIDTH / 2, HEIGHT / 2 + 100),
+      scale(2.5),
       origin("center")
     ]);
+    add([
+      text("Click to play again"),
+      pos(WIDTH / 2, HEIGHT / 2 + 300),
+      origin("center")
+    ]);
+    mouseClick(() => {
+      go("main");
+    });
   });
   go("main");
 })();
