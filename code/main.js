@@ -37,7 +37,7 @@ scene("main", () => {
     layer("bg"),
   ])
  
-  mouseClick(() => {
+  onKeyPress("space", () => {
     flappy.jump(JUMP_FORCE);
   })
 
@@ -112,7 +112,7 @@ scene("lose", () => {
     origin("center"),
   ])
 
-  mouseClick(() => {
+  onKeyPress("space", () => {
     go("main");
   })
 

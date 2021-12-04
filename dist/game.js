@@ -2760,7 +2760,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       pos(0, 0),
       layer("bg")
     ]);
-    mouseClick(() => {
+    onKeyPress("space", () => {
       flappy.jump(JUMP_FORCE);
     });
     flappy.action(() => {
@@ -2822,7 +2822,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       pos(WIDTH / 2, HEIGHT / 2 + 300),
       origin("center")
     ]);
-    mouseClick(() => {
+    onKeyPress("space", () => {
       go("main");
     });
   });
