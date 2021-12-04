@@ -107,7 +107,7 @@ scene("lose", () => {
   ])
 
   add([
-    text("Click to play again"),
+    text("Press 'Space' to play again"),
     pos(WIDTH/2,HEIGHT/2+300),
     origin("center"),
   ])
